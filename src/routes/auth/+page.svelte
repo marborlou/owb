@@ -165,7 +165,7 @@
 							class="flex items-center justify-center gap-3 text-xl sm:text-2xl text-center font-semibold"
 						>
 							<div>
-								{$i18n.t('Signing in to {{WEBUI_NAME}}', { WEBUI_NAME: 'FINGPT' })}
+								{$i18n.t('Signing in to {{WEBUI_NAME}}', { WEBUI_NAME: $WEBUI_NAME })}
 							</div>
 
 							<div>
@@ -185,13 +185,13 @@
 							<div class="mb-1">
 								<div class="text-2xl font-bold text-theme-blue">
 									{#if $config?.onboarding ?? false}
-										{$i18n.t(`Get started with {{WEBUI_NAME}}`, { WEBUI_NAME: 'FINGPT' })}
+										{$i18n.t(`Get started with {{WEBUI_NAME}}`, { WEBUI_NAME: $WEBUI_NAME })}
 									{:else if mode === 'ldap'}
-										{$i18n.t(`Login to {{WEBUI_NAME}} with LDAP`, { WEBUI_NAME: 'FINGPT' })}
+										{$i18n.t(`Login to {{WEBUI_NAME}} with LDAP`, { WEBUI_NAME: $WEBUI_NAME })}
 									{:else if mode === 'signin'}
-										{$i18n.t(`Login to {{WEBUI_NAME}}`, { WEBUI_NAME: 'FINGPT' })}
+										{$i18n.t(`Login to {{WEBUI_NAME}}`, { WEBUI_NAME: $WEBUI_NAME })}
 									{:else}
-										{$i18n.t(`Sign up to {{WEBUI_NAME}}`, { WEBUI_NAME: 'FINGPT' })}
+										{$i18n.t(`Sign up to {{WEBUI_NAME}}`, { WEBUI_NAME: $WEBUI_NAME })}
 									{/if}
 								</div>
 
