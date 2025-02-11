@@ -21,6 +21,11 @@ export default {
 					850: 'var(--color-gray-850, #262626)',
 					900: 'var(--color-gray-900, #171717)',
 					950: 'var(--color-gray-950, #0d0d0d)'
+				},
+				theme: {
+					blue: "#012f6c",
+					backgroundColor: "#f4f4f4",
+					chat: "#42618f"
 				}
 			},
 			typography: {
