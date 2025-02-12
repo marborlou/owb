@@ -82,7 +82,7 @@
 		allLanguages = await getLanguages();
 		console.log(allLanguages);
 		languages = allLanguages.filter((lang) =>
-			['de-DE', 'it-IT', 'fr-FR', 'fr-CA', 'en-US'].includes(lang.code)
+			['de-DE', 'it-IT', 'fr-FR', 'en-US'].includes(lang.code)
 		);
 
 		notificationEnabled = $settings.notificationEnabled ?? false;
