@@ -158,13 +158,6 @@
 					showSettings.set(!$showSettings);
 				}
 
-				// Check if Ctrl + / is pressed
-				if (isCtrlPressed && event.key === '/') {
-					event.preventDefault();
-					console.log('showShortcuts');
-					document.getElementById('show-shortcuts-button')?.click();
-				}
-
 				// Check if Ctrl + Shift + ' is pressed
 				if (isCtrlPressed && isShiftPressed && event.key.toLowerCase() === `'`) {
 					event.preventDefault();
