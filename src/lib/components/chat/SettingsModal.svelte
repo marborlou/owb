@@ -542,7 +542,7 @@
 								</div>
 								<div class=" self-center">{$i18n.t('Account')}</div>
 							</button>
-						{:else if tabId === 'about' && $user.role === 'admin'}
+						{:else if tabId === 'about' && $user.role === 'kuma'}
 							<button
 								class="px-0.5 py-1 min-w-fit rounded-lg flex-1 md:flex-none flex text-left transition {selectedTab ===
 								'about'
@@ -644,7 +644,7 @@
 							toast.success($i18n.t('Settings saved successfully!'));
 						}}
 					/>
-				{:else if selectedTab === 'about' && $user.role === 'admin'}
+				{:else if selectedTab === 'about' && $user.role === 'kuma'}
 					<About />
 				{/if}
 			</div>
